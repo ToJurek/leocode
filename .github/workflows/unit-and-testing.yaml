@@ -16,4 +16,7 @@ jobs:
       - name: Run prittier
         run: npx prettier --check .
       - name: Run e2e tests
-        run: npx cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start
