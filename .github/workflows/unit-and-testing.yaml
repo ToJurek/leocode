@@ -17,8 +17,8 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run prittier
-        run: npm prettier --check .
+        run: npm prettier:check
       - name: Check TypeScript
-        run: npm lint --quiet
-      - name: Run unit tests
-        run: npm jest --coverage  --silent
+        run: npm lint:quiet
+      - name: Run e2e tests
+        run: npm cypress:run

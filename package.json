@@ -29,7 +29,8 @@
     "prettier:format": "prettier --write .",
     "prettier:check ": "prettier --check  .",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "lint:quiet": "lint --quiet"
   },
   "eslintConfig": {
     "extends": [
