@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Getting Started with User List
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Main features
+
+1. Fetching user data
+2. Displaying the data
+3. Filter the data
+
+## Used libraries and technologies
+
+1. TypeScript
+2. Redux Toolkit - Redux RTK
+3. Tailwind
+4. Prettier
+5. Cypress
+6. Jest
+7. React Testing Library
+8. Cucumber
+9. GitHub Action
 
 ## Available Scripts
 
@@ -64,9 +82,3 @@ WARN: All e2e tests should pass to pass the pipeline
 If you want to format all file.
 
 WARN: All files should be formatted to pass the pipeline
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
