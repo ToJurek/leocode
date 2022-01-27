@@ -1,0 +1,24 @@
+name: Unit and Testing
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.13.0"
+      - uses: actions/cache@v2
+        with:
+          path: "**/node_modules"
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: npm install
+      - name: Run prittier
+        run: npm prettier --check .
+      - name: Check TypeScript
+        run: npm lint --quiet
+      - name: Run unit tests
+        run: npm jest --coverage  --silent
