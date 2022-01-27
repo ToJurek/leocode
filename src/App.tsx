@@ -16,7 +16,7 @@ function App() {
       <Header />
       <SearchField setQuery={setQuery} />
       {isLoading && <LoadingSpinner />}
-      {!isLoading && data && (
+      {!isLoading && data && !error && (
         <UserList users={filterUserByQuery(data, query)} />
       )}
       {!isLoading && error && <ErrorAlert />}

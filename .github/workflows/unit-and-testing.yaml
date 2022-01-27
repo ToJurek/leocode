@@ -15,6 +15,8 @@ jobs:
         run: npm install
       - name: Run prittier
         run: npx prettier --check .
+      - name: Run units
+        run: npx jest --coverage
       - name: Run e2e tests
         uses: cypress-io/github-action@v2
         with:
