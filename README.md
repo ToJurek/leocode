@@ -39,6 +39,32 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run jest`
+
+If you want to test all feature by using test check this command.
+
+You can check coverage of test by adding `--coverage` flag to command.
+
+WARN: All unit tests should pass to pass the pipeline
+
+### `npm run cypress:run`
+
+If you want to run all e2e tests with cypress runner.
+
+WARN: All e2e tests should pass to pass the pipeline
+
+### `npm run cypress:open`
+
+If you want to run all e2e tests with browser window.
+
+WARN: All e2e tests should pass to pass the pipeline
+
+### `npm run prettier:format`
+
+If you want to format all file.
+
+WARN: All files should be formatted to pass the pipeline
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
